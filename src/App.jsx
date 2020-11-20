@@ -1,7 +1,8 @@
 import React from 'react';
+import SetStateDemo from './setStateDemo';
 // import MyNav from './MyNav';
 // import StateComponent from './StateComponent';
-import ComponentLife from './ComponentLife';
+// import ComponentLife from './ComponentLife';
 
 export default class App extends React.Component {
 
@@ -30,8 +31,9 @@ export default class App extends React.Component {
              </div> */
             // <StateComponent/>
             <div>
-                <ComponentLife title = {this.state.title} />
-                <button onClick = {this.updateTitle}>修改title</button>
+                {/* <ComponentLife title = {this.state.title} /> */}
+                {/* <button onClick = {this.updateTitle}>修改title</button> */}
+                <SetStateDemo />
             </div>
            
         )
