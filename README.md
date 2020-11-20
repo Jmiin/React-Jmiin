@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+## 创建/启动项目
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+npx create-react-app you-app-name
+cd you-app-name
+npm start
 
-## Available Scripts
+## 环境介绍
+node_modules:导入的模块
 
-In the project directory, you can run:
 
-### `yarn start`
+## React基础知识
+### JSX语法介绍
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+JSX语法：JavaScript + XML语法（HTML）
+解读jsx语法：遇到<>按照HTML语法解析，遇到{}按照JS解析
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 元素渲染
 
-### `yarn test`
+元素是构成 React 应用的最小砖块。
+React 元素是不可变对象。一旦被创建，你就无法更改它的子元素或者属性。一个元素就像电影的单帧：它代表了某个特定时刻的 UI。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 组件
 
-### `yarn build`
+组件的后缀可以是js，也可以是jsx
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### props属性
+组件的复用性很重要
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 事件处理
+1. this问题
+2. 向事件处理程序传递参数
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### state
 
-### `yarn eject`
+### React 生命周期函数
+函数列表：
+    componentWillMount: 在组件渲染之前执行（React 17弃用）
+    componentDidMount: 在组件渲染之后执行
+    shouldComponentUpdate: 返回true和false, true代表允许改变, false代表不允许改变
+    componentWillUpdate: 数据在改变之前执行（state,props）
+    componentDidUpdate: 数据修改完成（state,props）
+    componentWillRevieceProps: props发送改变执行
+    componentWillUnmount: 组件卸载前执行
+父子组件之间的相互调用
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### setState更新是同步还是异步
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.setState会引起视图的重绘
