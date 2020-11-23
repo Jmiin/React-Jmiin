@@ -2,8 +2,9 @@ import React from 'react';
 import { DatePicker, Button } from 'hzero-ui';
 import 'hzero-ui/dist/hzero-ui.css';
 import RegistrationForm from './RegistrationForm';
+import Greeting from './condition';
 
-import SetStateDemo from './setStateDemo';
+// import SetStateDemo from './setStateDemo';
 // import MyNav from './MyNav';
 // import StateComponent from './StateComponent';
 // import ComponentLife from './ComponentLife';
@@ -48,7 +49,8 @@ export default class App extends React.Component {
             <div>
                 {/* <ComponentLife title = {this.state.title} /> */}
                 {/* <button onClick = {this.updateTitle}>修改title</button> */}
-                <SetStateDemo />
+                {/* <SetStateDemo /> */}
+                <Greeting isLoggedIn={false} />
                 <DatePicker />
                 <Button type="primary">Primary</Button>
                 <Button>Default</Button>
@@ -77,8 +79,6 @@ export default class App extends React.Component {
                     <RegistrationForm />
                 </div>
             </div>
-
-
         )
     }
 }
