@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HzeroUi from './hzeroUi';
 // import Clock from './Clock';
 // import App from './App';
-import KeyDemo from './KeyDemo';
+// import KeyDemo from './KeyDemo';
 
 //eslint-disable-next-line
 // const element = <h1>Hello, world</h1>;
@@ -68,6 +69,6 @@ React.createElement(
 ); */
 ReactDOM.render(
   // <App />,
-  <KeyDemo />,
+  <HzeroUi />,
   document.getElementById('root')
 );
