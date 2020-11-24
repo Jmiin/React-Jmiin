@@ -1,6 +1,10 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom';
-import HzeroUi from './hzeroUi';
+import App2 from './App2';
+// import NameForm from './NameForm';
+// import FlavorForm from './FlavorForm';
+// import FormDemo from './FormDemo';
+// import HzeroUi from './hzeroUi';
 // import Clock from './Clock';
 // import App from './App';
 // import KeyDemo from './KeyDemo';
@@ -69,6 +73,9 @@ React.createElement(
 ); */
 ReactDOM.render(
   // <App />,
-  <HzeroUi />,
+  // <HzeroUi />,
+  // <FormDemo />,
+  // <FlavorForm />,
+  <App2 />,
   document.getElementById('root')
 );
