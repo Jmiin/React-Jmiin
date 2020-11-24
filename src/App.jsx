@@ -50,6 +50,11 @@ export default class App extends React.Component {
                 {/* <ComponentLife title = {this.state.title} /> */}
                 {/* <button onClick = {this.updateTitle}>修改title</button> */}
                 {/* <SetStateDemo /> */}
+                
+                <button type="button"
+                    onclick="">
+                    点击这里来显示日期和时间
+                </button>
                 <Greeting isLoggedIn={false} />
                 <DatePicker />
                 <Button type="primary">Primary</Button>

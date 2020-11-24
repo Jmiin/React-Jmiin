@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import Clock from './Clock';
-import App from './App';
-
+// import App from './App';
+import KeyDemo from './KeyDemo';
 
 //eslint-disable-next-line
 // const element = <h1>Hello, world</h1>;
@@ -37,8 +37,37 @@ import App from './App';
 //   document.getElementById('root')
 // );
 
+
+
+/**
+ * 
+ * <div>
+    <h1>Hello!</h1>
+    {unreadMessages.length > 0 &&
+      <h2>
+        You have {unreadMessages.length} unread messages.
+          </h2>
+    }
+   </div>
+   该方式和以下的实现是一致的
+ */
+/* let unreadMessages = [];
+
+React.createElement(
+  "div",
+  null,
+  React.createElement("h1", null, "Hello!"),
+  unreadMessages.length > 0 &&
+  React.createElement(
+    "h2",
+    null,
+    "You have ",
+    unreadMessages.length,
+    " unread messages."
+  )
+); */
 ReactDOM.render(
-  <App/>,
+  // <App />,
+  <KeyDemo />,
   document.getElementById('root')
 );
-
