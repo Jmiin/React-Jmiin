@@ -83,3 +83,48 @@ console.log(beverage); // "Beer"
 ### 状态提升
 
 在 React 中，将多个组件中需要共享的 state 向上移动到它们的最近共同父组件中，便可实现共享 state。这就是所谓的“状态提升”。
+
+### 组合 & 继承
+this.props.children
+
+### 使用 PropTypes 进行类型检查
+```js
+    import PropTypes from 'prop-types';
+
+    class Greeting extends React.Component {
+    render() {
+        return (
+        <h1>Hello, {this.props.name}</h1>
+        );
+    }
+    }
+
+    Greeting.propTypes = {
+    name: PropTypes.string
+    };
+```
+PropTypes 提供一系列验证器，可用于确保组件接收到的数据类型是有效的。在本例中, 我们使用了 PropTypes.string。当传入的 prop 值类型不正确时，JavaScript 控制台将会显示警告。出于性能方面的考虑，propTypes 仅在开发模式下进行检查。
+
+#### 限制单个元素
+
+通过 PropTypes.element 来确保传递给组件的 children 中只包含一个元素。
+```jsx
+MyComponent.propTypes = {
+  children: PropTypes.element.isRequired
+};
+```
+
+#### 默认 Prop 值
+```jsx
+// 指定 props 的默认值：
+Greeting.defaultProps = {
+  name: 'Stranger'
+};
+
+// 渲染出 "Hello, Stranger"：
+ReactDOM.render(
+  <Greeting />,
+  document.getElementById('example')
+);
+```
+用途：提示程序的健壮性，主要用于声明字段类型（规范）

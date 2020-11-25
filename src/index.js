@@ -1,6 +1,7 @@
 // import React from 'react';
 import ReactDOM from 'react-dom';
-import App2 from './App2';
+// import App2 from './App2';
+import PropsTypeDemo from './PropsTypeDemo';
 // import NameForm from './NameForm';
 // import FlavorForm from './FlavorForm';
 // import FormDemo from './FormDemo';
@@ -76,6 +77,7 @@ ReactDOM.render(
   // <HzeroUi />,
   // <FormDemo />,
   // <FlavorForm />,
-  <App2 />,
+  // <App2 />,
+  <PropsTypeDemo title = "标题"/>,
   document.getElementById('root')
 );
