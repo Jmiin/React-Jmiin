@@ -128,3 +128,11 @@ ReactDOM.render(
 );
 ```
 用途：提示程序的健壮性，主要用于声明字段类型（规范）
+
+### fetch 网络请求
+
+[参考](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
+
+### react 跨域解决方案
+
+[参考](https://github.com/facebook/create-react-app/blob/master/docusaurus/docs/proxying-api-requests-in-development.md)
