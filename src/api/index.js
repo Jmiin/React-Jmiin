@@ -7,7 +7,13 @@ import base from "./base";
 const api = {
     getApiList() {
         return httpGet(base.ownUrl + base.list);
+    },
+
+    getApiPost(){
+        return httpPost(base.ownUrl,'');
     }
 }
+
+
 
 export default api;

@@ -1,6 +1,7 @@
-// import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import ProxyDemo from './fetch/ProxyDemo';
+import App3 from './App3';
+// import ProxyDemo from './fetch/ProxyDemo';
 // import Fetch from './fetch/Fetch';
 // import App2 from './App2';
 // import PropsTypeDemo from './PropsTypeDemo';
@@ -82,6 +83,7 @@ ReactDOM.render(
   // <App2 />,
   // <PropsTypeDemo title = "标题"/>,
   // <Fetch />,
-  <ProxyDemo />,
+  // <ProxyDemo />,
+  <App3 />,
   document.getElementById('root')
 );

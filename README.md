@@ -137,4 +137,18 @@ ReactDOM.render(
 
 [参考](https://github.com/facebook/create-react-app/blob/master/docusaurus/docs/proxying-api-requests-in-development.md)
 
-### mock使用及fetch封装
+### React Router
+
+[reactrouter](https://reactrouter.com/web/guides/quick-start)
+
+1.安装
+
+> cnpm install react-router-dom --save
+
+安装完成后会在package.json中
+
+2.路由的作用：
+    单页面应用(SPA)，路由跳转：切换显示视图
+
+ 
+###
