@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import api from '../api';
 
 export default class ProxyDemo extends PureComponent {
 
@@ -12,6 +13,16 @@ export default class ProxyDemo extends PureComponent {
          * //https://github.com/facebook/create-react-app/blob/master/docusaurus/docs/proxying-api-requests-in-development.md
          */
         fetch('/api/list')
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data);
+        })
+
+
+        /**
+         * 通过封装调用get
+         */
+        api.getApiList()
         .then(res => res.json())
         .then(data =>{
             console.log(data);

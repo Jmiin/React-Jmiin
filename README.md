@@ -136,3 +136,5 @@ ReactDOM.render(
 ### react 跨域解决方案
 
 [参考](https://github.com/facebook/create-react-app/blob/master/docusaurus/docs/proxying-api-requests-in-development.md)
+
+### mock使用及fetch封装
