@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App3 from './App3';
+// import App3 from './App3';
+import App4 from './App4';
+import App6 from './App6';
+import { createStore } from 'redux';
+import redux from './redux/reducers/user';
+
 // import ProxyDemo from './fetch/ProxyDemo';
 // import Fetch from './fetch/Fetch';
 // import App2 from './App2';
@@ -75,6 +80,8 @@ React.createElement(
     " unread messages."
   )
 ); */
+// const store = createStore(redux);
+// store.subscribe(() => console.log(store.getState()))
 ReactDOM.render(
   // <App />,
   // <HzeroUi />,
@@ -84,6 +91,8 @@ ReactDOM.render(
   // <PropsTypeDemo title = "标题"/>,
   // <Fetch />,
   // <ProxyDemo />,
-  <App3 />,
+  // <App3 />,
+  // <App5 addUser={() => store.dispatch({ type: "ADD_USER" })} />,
+  <App6 />,
   document.getElementById('root')
 );

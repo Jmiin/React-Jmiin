@@ -151,4 +151,14 @@ ReactDOM.render(
     单页面应用(SPA)，路由跳转：切换显示视图
 
  
-###
+#### exact 精准匹配
+
+### Redux 
+
+> 如果你不知道什么时候需要使用Redux,就是你不需要使用它，当你遇到解决不了的问题，自然会想起Redux
+
+redux和react-redux的区别
+     redux: js的状态管理 createStore
+     react-redux: 为了在react中容易使用：connect provider
+
+安装：cnpm install --save-dev redux
